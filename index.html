@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adres Defteri</title>
+  <link rel="stylesheet" href="assets/css/adres-defteri.css">
+  <script src="assets/js/adres-defteri.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="adres-defteri-form" >
+      <label for="adsoyad">Adı Soyadı =
+        <input type="text" class="ad" name="adsoyad" placeholder="Lütfen adınızı ve soyadınızı giriniz">
+      </label>
+      <label for="telefon">Telefon Numarası  =
+        <input type="number" class="tel" name="telefon" placeholder="Lütfen telefon numaranızı giriniz">
+      </label>
+    
+
+    <label for="adres">Adresi = 
+      <textarea name="adresmetni" placeholder="lütfen bir dosya seçiniz"> </textarea> 
+    </label>
+    <button type="submit">Kaydet</button>
+    </form>
+
+    <div class="adres-defteri">
+    </div>
+
+    <p class="clearStorage"><button class="garbage">🗑</button> Listeyi Temizle</p>
+  </div>
+</body>
+
+</html>

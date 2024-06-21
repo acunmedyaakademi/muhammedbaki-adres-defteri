@@ -1,0 +1,157 @@
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+  cursor: pointer;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cactus;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow: auto;
+  background-color: aquamarine;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  text-overflow: ellipsis;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.adres-defteri-form {
+  background-color: rgb(13, 233, 159);
+  padding: 10px;
+  border-radius: 20px;
+  width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.adres-defteri-form button {
+  cursor: pointer;
+  width: 200px;
+  border: 2px solid black;
+}
+.adres-defteri-form button:hover {
+  border: 2px solid black;
+  background-color: rgb(13, 233, 159);
+  color: white;
+}
+.adres-defteri {
+  background-image: linear-gradient(90deg, transparent 0%, transparent 10%, #EA858A 10%, #EA858A calc(10% + 3px), transparent calc(10% + 3px), transparent 100%), linear-gradient(180deg, white 10%, transparent 10%), repeating-linear-gradient(180deg, #91C1E1 0px, #91C1E1 2px, transparent 2px, transparent 38px), linear-gradient(white,white);
+  width: 800px;
+  margin: 20px auto;
+  padding: 5px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.adres-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.adres-item p {
+  overflow:auto;
+}
+
+.adres-item button {
+  padding: 2px 5px;
+}
+
+
+
+.okey {
+  display: none;
+}
+
+
+.garbage {
+  font-size: 45px;
+  padding: 1px 10px;
+  background-color: white;
+  border: none;
+  font-weight: 500;
+}
+
+.clearStorage {
+  width: 200px;
+  margin: 20px auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
