@@ -4,7 +4,7 @@ let adressList = [];
 
 if (typeof localStorage.adressList !== "undefined") {
   adressList = JSON.parse(localStorage.adressList);
-  renderStudents();
+  renderAdress();
 }
 
 function handleFormSubmit(e) {
@@ -15,7 +15,7 @@ function handleFormSubmit(e) {
   adresDefteriForm.reset();
 
   save();
-  renderStudents();
+  renderAdress();
 }
 adresDefteriForm.addEventListener("submit", handleFormSubmit);
 
@@ -25,7 +25,7 @@ function save() {
 
 let ad = document.querySelector(".ad");
 let tel = document.querySelector(".tel");
-function renderStudents() {
+function renderAdress() {
   adresDefteri.innerHTML = "";
   for (let adres of adressList) {
     adresDefteri.innerHTML += `
